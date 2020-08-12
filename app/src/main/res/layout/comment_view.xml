@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/commetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_toLeftOf="@+id/textView4"
+            android:layout_toStartOf="@+id/textView4"
+            android:text="TextView"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="26dp"
+            android:layout_toLeftOf="@+id/nameView"
+            android:layout_toStartOf="@+id/nameView"
+            android:text="From:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/nameView"
+            android:layout_toLeftOf="@+id/dateView"
+            android:layout_toStartOf="@+id/dateView"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nameView"
+            android:layout_alignBottom="@+id/nameView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="TextView"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

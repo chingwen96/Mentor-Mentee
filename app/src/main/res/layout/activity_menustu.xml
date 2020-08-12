@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="98dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="29dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="serif"
+        android:gravity="center_vertical"
+        android:text="CS: Mentor-Mentee"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkPurple"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/imageVie4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="199dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="13dp"
+        android:fontFamily="cursive"
+        android:text="Academic Session 2018/2019"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/title"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        android:layout_marginRight="13dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+        <ImageView
+            android:id="@+id/imageVie4"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/imageVie4"
+            android:layout_alignStart="@+id/imageVie4"
+            android:layout_below="@+id/menteeV"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/lecturer"
+            tools:ignore="DuplicateIds,NotSibling" />
+
+        <ImageView
+            android:id="@+id/imageVie4"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="258dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:srcCompat="@drawable/lecturer"
+            tools:ignore="DuplicateIds,NotSibling"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:id="@+id/menteeV"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageVie4"
+            android:layout_toRightOf="@+id/imageVie4"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text=" Mentor"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/mentorName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/menteeV"
+            android:layout_toEndOf="@+id/imageVie4"
+            android:layout_toRightOf="@+id/imageVie4"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="start" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/menteeV"
+            android:layout_alignRight="@+id/menteeV"
+            android:layout_below="@+id/mentorName"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/calendar"
+            tools:layout_editor_absoluteX="373dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignStart="@+id/imageView2"
+            android:layout_below="@+id/imageView2"
+            android:layout_marginTop="22dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/anouncement" />
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@+id/imageView3"
+            android:layout_alignStart="@+id/imageView3"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="26dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/mentees" />
+
+        <TextView
+            android:id="@+id/calendarView"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:autoLink="none"
+            android:background="@drawable/rectangleborder"
+            android:clickable="true"
+            android:text=" Calendar"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="233dp" />
+
+        <TextView
+            android:id="@+id/AnnView"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:background="@drawable/rectangleborder"
+            android:clickable="true"
+            android:gravity="center_horizontal"
+            android:text=" Announcement"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="233dp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/acaV"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/imageView5"
+            android:layout_toEndOf="@+id/imageView5"
+            android:layout_toRightOf="@+id/imageView5"
+            android:background="@drawable/rectangleborder"
+            android:fontFamily="sans-serif"
+            android:gravity="start"
+            android:text=" Academic"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

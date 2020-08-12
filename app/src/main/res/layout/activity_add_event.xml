@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addEventActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:text="Add Event"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/dateTV"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/descripevent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="229dp"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/dateevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTV"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="157dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="-28dp"
+        tools:text="dd-mm-yy" />
+
+    <TextView
+        android:id="@+id/subTV"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="257dp"
+        android:layout_marginRight="257dp"
+        android:text="Subject" />
+
+    <EditText
+        android:id="@+id/subevent"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subTV"
+        android:layout_alignStart="@+id/descripevent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-29dp"
+        tools:text="Subject" />
+
+    <TextView
+        android:id="@+id/descripTV"
+        android:layout_width="81dp"
+        android:layout_height="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="232dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginRight="248dp"
+        android:text="Description" />
+
+    <EditText
+        android:id="@+id/descripevent"
+        android:layout_width="275dp"
+        android:layout_height="112dp"
+        android:layout_below="@+id/descripTV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="281dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        tools:text="Description" />
+
+    <Button
+        android:id="@+id/saveevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-217dp"
+        android:layout_marginTop="412dp"
+        android:layout_toEndOf="@+id/subevent"
+        android:text="SAVE" />
+
+    <Button
+        android:id="@+id/cancelevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/saveevent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="191dp"
+        android:layout_marginTop="414dp"
+        android:text="CANCEL" />
+
+</RelativeLayout>

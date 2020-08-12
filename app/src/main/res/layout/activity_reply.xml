@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textA"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Replies"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_purple"
+        android:textSize="32sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:clickable="true"
+        app:backgroundTint="@android:color/holo_blue_dark"
+        app:elevation="800dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/commentText2"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toTopOf="@+id/send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/listComment"
+                android:layout_width="351dp"
+                android:layout_height="320dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/textAnnView"
+                android:layout_marginTop="40dp" />
+
+            <TextView
+                android:id="@+id/textAnnView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/listComment"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/listComment"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textAnnView"
+                android:layout_centerHorizontal="true"
+                android:text="By:"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="183dp"
+                tools:layout_editor_absoluteY="82dp" />
+
+            <TextView
+                android:id="@+id/textNameView"
+                android:layout_width="177dp"
+                android:layout_height="22dp"
+                android:layout_alignBottom="@+id/tview"
+                android:layout_toEndOf="@+id/tview"
+                android:layout_toRightOf="@+id/tview"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                tools:layout_editor_absoluteX="183dp"
+                tools:layout_editor_absoluteY="82dp" />
+
+            <TextView
+                android:id="@+id/comNameView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textNameView"
+                android:layout_alignBottom="@+id/textNameView"
+                android:layout_alignLeft="@+id/textAnnView"
+                android:layout_alignStart="@+id/textAnnView"
+                android:layout_marginLeft="22dp"
+                android:layout_marginStart="22dp"
+                android:textColor="@android:color/transparent" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/commentText2"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:ems="30"
+        android:hint="Comment here......"
+        android:inputType="textImeMultiLine|textShortMessage|textLongMessage"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/darker_gray"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/send"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>

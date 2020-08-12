@@ -1,0 +1,96 @@
+<resources>
+    <string name="app_name">cs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="title_activity_auth">authActivity</string>
+    <string name="title_activity_announcement">AnnouncementActivity</string>
+    <string name="title_activity_announce">AnnounceActivity</string>
+    <string name="title_activity_annou_list">AnnouListActivity</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="academic_session_18_19">Academic Session 18/19</string>
+    <string name="Academic">Academic</string>
+    <string name="academic123">Academic</string>
+    <string name="textview" />
+    <string name="Register">"  "Register"  "</string>
+    <string name="Upload"> "   "Upload"   " </string>
+    <string name="Check">Check</string>
+    <string name="Statistics">Statistics</string>
+    <string name="success_login_msg" />
+    <string name="error_login_msg" />
+
+    <array name="subject">
+        <item>CPT111 Principles of Programming</item>
+        <item>CPT112 Discrete Structures</item>
+        <item>CPT113 Programming Methodology and Data Structures</item>
+        <item>CPT114 Logic and Applications</item>
+        <item>CPT115 Mathematical Methods for Computer Science</item>
+        <item>CST131 Computer Organisation</item>
+        <item>CAT200 Integrated Software Development Workshop</item>
+        <item>CMT221 Database Organisation and Design</item>
+        <item>CMT222 Systems Analysis and Design</item>
+        <item>CMT223 Information Systems Theory and Management</item>
+        <item>CMT224 Multimedia Systems</item>
+        <item>CPT211 Programming Language Concepts and Paradigms</item>
+        <item>CPT212 Design and Analysis of Algorithms</item>
+        <item>CPT243 Software Requirements Analysis and Modelling</item>
+        <item>CPT244 Artificial Intelligence</item>
+        <item>CST231 Data Communications and Networks</item>
+        <item>CST232 Operating Systems</item>
+        <item>CST233 Information Security and Assurance</item>
+        <item>CST234 Network Programming</item>
+        <item>CAT300 Group Innovation Project</item>
+        <item>CAT301 Research Methods and Special Topic Study</item>
+        <item>CAT302/CAT303 Industrial Training/Undergraduate Research Training</item>
+        <item>CMT321 Management and Engineering of Databases</item>
+        <item>CMT322 Web Engineering and Technologies</item>
+        <item>CMT324 Computer Graphics and Visual Computing</item>
+        <item>CPT341 Software Design and Architecture</item>
+        <item>CPT342 Knowledge Management and Engineering</item>
+        <item>CPT343 Software Project Management, Process and Evolution</item>
+        <item>CPT344 Computer Vision and Image Processing</item>
+        <item>CPT346 Natural Language Processing</item>
+        <item>CST331 Principles of Parallel and Distributed Programming</item>
+        <item>CST332 Internet Protocols, Architecture and Routing</item>
+        <item>CST333 Distributed and Grid Computing</item>
+        <item>CST334 Network Monitoring and Security</item>
+        <item>CAT400/CAT401 Undergraduate Major Project/Undergraduate Research Project</item>
+        <item>CAT402 Professional and Technopreneurship Development</item>
+        <item>CMT421 E-Business Strategy, Architecture and Design</item>
+        <item>CMT422 Multimedia Information Systems and Management</item>
+        <item>CMT423 Decision Support Systems and Business Intelligence</item>
+        <item>CMT424 Animation and Virtual Reality</item>
+        <item>CPT441 Software Quality Assurance and Testing</item>
+        <item>CPT443 Automata Theory and Formal Languages</item>
+        <item>CPT444 Intelligent Health Informatics</item>
+        <item>CST431 Systems Security and Protection</item>
+        <item>CST432 Microprocessors and Embedded Systems</item>
+        <item>CST433 Advanced Computer Architecture</item>
+        <item>CST434 Wireless Network and Mobile Computing</item>
+        <item>LMT 100 Preparatory English</item>
+        <item>LSP 300 Academic English</item>
+        <item>LSP 401 General English</item>
+        <item>LSP 402 Scientific and Medical English</item>
+        <item>LSP 403 Business and Communication English</item>
+        <item>LSP 404 Technical and Engineering English</item>
+        <item>LHP 451 Effective Reading</item>
+        <item>LHP 452 Business Writing</item>
+        <item>LHP 453 Creative Writing</item>
+        <item>LHP 454 Academic Writing</item>
+        <item>LHP 455 English Pronunciation Skills</item>
+        <item>LHP 456 Spoken English</item>
+        <item>LHP 457 Public Speaking and Speech Writing</item>
+        <item>LHP 458 English for Translation</item>
+        <item>LHP 459 English for Interpretation</item>
+        <item>LDN 101 English for Nursing 1</item>
+        <item>LDN 201 English for Nursing 2</item>
+
+    </array>
+    <array name="code">
+        <item>T</item>
+        <item>E</item>
+        <item>M</item>
+        <item>U</item>
+    </array>
+
+</resources>
